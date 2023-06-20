@@ -17,7 +17,7 @@ Chaque point représente une station et les couleurs illustrent les communes de 
 
 Je récupère les données historiques du réseau grâce à l'API du site <a href="https://opendata.paris.fr">opendata.paris.fr</a>
 et les données météo grâce au site <a href= "https://www.visualcrossing.com">visualcrossing.com </a>.
-J'ai fait tourner <a href="https://github.com/Tamiir/TIPE/GET_csv.py">GET_csv.py</a> sur 3 mois. Le fichier n'est pas sur le git (4,5Go), mais j'ai fourni <a href="https://github.com/Tamiir/TIPE/vélib_données.csv">un jour de recupération</a> pour comprendre le format.
+J'ai fait tourner [GET_csv.py](GET_csv.py) sur 3 mois. Le fichier n'est pas sur le git (4,5Go), mais j'ai fourni [un jour de recupération](vélib_données.csv) pour comprendre le format.
 
 J'ai utilisé 3 modèles de prédiction différents :
 
@@ -25,14 +25,14 @@ J'ai utilisé 3 modèles de prédiction différents :
 - **2ème modèle** : clustering
 - **3ème modèle** : Random Forest
 
-Ces modèles sont inspirés de ceux utilisés dans differentes études, vous pouvez retrouver les références des articles dans mon <a href="https://github.com/Tamiir/TIPE/MCOT_DOT">MCOT</a>.
+Ces modèles sont inspirés de ceux utilisés dans differentes études, vous pouvez retrouver les références des articles dans mon [MCOT](MCOT_DOT/Mcot_40599.pdf)
 
-En raison de la longueur des calculs, les résultats ont été stockés dans des fichiers Numpy (`.npy`), ils sont retrouvables dans le répertoire <a href="https://github.com/Tamiir/TIPE/resultats">resulats</a>.  
-De plus, pour réduire le temps de calcul, j'ai eu recours au <a href="https://github.com/Tamiir/TIPE/multiprocess.py"> _multiprocessing_</a>. Les différents scripts qui ont servis aux differents calculs sont laissé en commentaires dans le fichier python.
+En raison de la longueur des calculs, les résultats ont été stockés dans des fichiers Numpy (`.npy`), ils sont retrouvables dans le répertoire [resulats](resultats).  
+De plus, pour réduire le temps de calcul, j'ai eu recours au  [_multiprocessing_](multiprocess.py). Les différents scripts qui ont servis aux differents calculs sont laissé en commentaires dans le fichier python.
 
 <img src="illustrations/16maiRFcharonne.png" width="400">
 
-Pour plus de détails sur les modèles, voir <a href="https://github.com/Tamiir/TIPE/modeles.md">ici</a>.
+Pour plus de détails sur les modèles, voir [ici](modeles.md).
 
 ---
 
@@ -76,7 +76,7 @@ Each dot represents a station and the colors show the municipalities of the Pari
 
 ### Execution
 
-I get the historical data from the network through the <a href="https://opendata.paris.fr">opendata.paris.fr</a> website API and the weather data through <a href= "https://www.visualcrossing.com">visualcrossing.com</a>. I ran <a href="https://github.com/Tamiir/TIPE/GET_csv.py">GET_csv.py</a> for 3 months. The file is not on git (4.5GB), but I provided <a href="https://github.com/Tamiir/TIPE/vélib_données.csv">a day of recovery</a> to understand the format.
+I get the historical data from the network through the <a href="https://opendata.paris.fr">opendata.paris.fr</a> website API and the weather data through <a href= "https://www.visualcrossing.com">visualcrossing.com</a>. I ran [GET_csv.py](GET_csv.py) for 3 months. The file is not on git (4.5GB), but I provided [a day of recovery](vélib_données.csv) to understand the format.
 
 I used three different predictive models:
 
@@ -84,14 +84,14 @@ I used three different predictive models:
 - 2nd model: clustering
 - 3rd model: _Random Forest_
 
-These models are inspired by those used in different studies, you can find the references of the articles in my <a href="https://github.com/Tamiir/TIPE/MCOT_DOT">MCOT</a>.
+These models are inspired by those used in different studies, you can find the references of the articles in my [MCOT](MCOT_DOT/Mcot_40599.pdf).
 
-Due to the length of the calculations, the results have been stored in Numpy (.npy) files, they can be found in the <a href="https://github.com/Tamiir/TIPE/resultats">resulats</a> directory.
-In addition, to reduce the calculation time, I used <a href="https://github.com/Tamiir/TIPE/multiprocess.py"> _multiprocessing_</a>. The various scripts used for the different calculations are left as comments in the python file.
+Due to the length of the calculations, the results have been stored in Numpy (.npy) files, they can be found in the [resulats](resultats) directory.
+In addition, to reduce the calculation time, I used [_multiprocessing_](multiprocess.py). The various scripts used for the different calculations are left as comments in the python file.
 
 <img src="illustrations/16maiRFcharonne.png" width="400">
 
-For more details on the models, see <a href="https://github.com/Tamiir/TIPE/modeles.md">here</a>. _(in french only)_
+For more details on the models, see [here](modeles.md). _(in french only)_
 
 ---
 
