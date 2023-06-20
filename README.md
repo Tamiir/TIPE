@@ -27,7 +27,7 @@ J'ai utilisé 3 modèles de prédiction différents :
 
 Ces modèles sont inspirés de ceux utilisés dans differentes études, vous pouvez retrouver les références des articles dans mon [MCOT](MCOT_DOT/Mcot_40599.pdf)
 
-En raison de la longueur des calculs, les résultats ont été stockés dans des fichiers Numpy (`.npy`), ils sont retrouvables dans le répertoire [resulats](resultats).  
+En raison de la longueur des calculs, les résultats ont été stockés dans des fichiers Numpy (`.npy`), ils sont retrouvables dans le répertoire [resultats](resultats).  
 De plus, pour réduire le temps de calcul, j'ai eu recours au  [_multiprocessing_](multiprocess.py). Les différents scripts qui ont servis aux differents calculs sont laissé en commentaires dans le fichier python.
 
 <img src="illustrations/16maiRFcharonne.png" width="400">
@@ -86,7 +86,7 @@ I used three different predictive models:
 
 These models are inspired by those used in different studies, you can find the references of the articles in my [MCOT](MCOT_DOT/Mcot_40599.pdf).
 
-Due to the length of the calculations, the results have been stored in Numpy (.npy) files, they can be found in the [resulats](resultats) directory.
+Due to the length of the calculations, the results have been stored in Numpy (.npy) files, they can be found in the [resultats](resultats) directory.
 In addition, to reduce the calculation time, I used [_multiprocessing_](multiprocess.py). The various scripts used for the different calculations are left as comments in the python file.
 
 <img src="illustrations/16maiRFcharonne.png" width="400">
