@@ -13,7 +13,7 @@ et vélos éléctriques disponibles à la station $s$ à l'instant $\tau$
 
 \begin{equation} \text{Moy}_{s,t,i } = \frac{ \sum_{ \tau \in [t- \Delta t;t+ \Delta t]} x_{s,\tau,i} }{ \text{Card} \{d_{s,\tau} | \tau \in [t- \Delta t;t+ \Delta t] \} } \qquad i \in \{\text{dispo, meca, elec} \} \end{equation}
 
-Autrement dit :
+Autrement dit : 
 $ \text{Moy}_{s,t,i } = \text{Moyenne} ( \: \{x_{s,\tau,i} | \tau \in [t- \Delta t;t+ \Delta t] \} \: ) \qquad i \in \{\text{dispo, meca, elec} \} $
 
 <img src="illustrations/16maiMoyenneCharonne.png" width="400"> <img src="illustrations/16maiMoyenneVeloCharonne.png" width="400"> 
@@ -54,7 +54,7 @@ Je ne vais pas détailler le fonctionnement de l'algorithme ici.
 Grâce à cet algorithme je peux ajouter des facteurs externes à la prédiction comme la météo. J'ai choisit de prendre en compte la température, les précipitations, la vitesse du vent et les conditions générales.  
 Ainsi, en mettant en entrée une table de données de la forme de `vélib_données.csv` et comme table de sortie un fichier de la forme `vélib_données_16mai.csv` disponible dans `csvAux`. On obtient les résultats suivant :
 
-<img src="illustrations/16maiRFcharonne.png" width="400"> <img src="illustrations/16maiRFVelocharonne.png" width="400">
+<img src="illustrations/16maiRFcharonne.png" width="400"> <img src="illustrations/16maiRFVeloCharonne.png" width="400">
 
 On peut ci-dessous observer l'influence de la météo sur le modèle utilisant le _Random Forest_, on voit que le matin (00h-06h) la météo influe peu sur le modèle, en revanche l'après midi, (12h-18h) la météo à une grande importance. Ceci semble montrer une cohérence du modèle.
 
