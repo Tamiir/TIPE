@@ -9,11 +9,11 @@ Et ainsi, je fais la moyenne.
 En notant respectivement :
 
 - $x_{s,\tau,dispo}$, $x_{s,\tau,meca}$, $x_{s,\tau,elec}$ les nombres de places, vélos mécaniques  
-et vélos éléctriques disponibles à la station $s$ à l'instant $\tau$
+et vélos éléctriques disponibles à la station $s$ à l'instant $\tau$ 
 
-$$ 
-\text{Moy}_{s,t,i } = \frac{ \sum_{ \tau \in [t- \Delta t;t+ \Delta t]} x_{s,\tau,i} }{ \text{Card} \{d_{s,\tau} | \tau \in [t- \Delta t;t+ \Delta t] \} } \qquad i \in \{\text{dispo, meca, elec} \} 
 $$
+\text{Moy}_{s,t,i } = \frac{ \sum_{ \tau \in [t- \Delta t;t+ \Delta t]} x_{s,\tau,i} }{ \text{Card} \{d_{s,\tau} | \tau \in [t- \Delta t;t+ \Delta t] \} } \qquad i \in \{\text{dispo, meca, elec} \}
+$$ 
 
 Autrement dit :
 $$
