@@ -16,7 +16,9 @@ et vélos éléctriques disponibles à la station $s$ à l'instant $\tau$
 ```
 
 Autrement dit : 
-$ \text{Moy}_{s,t,i } = \text{Moyenne} ( \: \{x_{s,\tau,i} | \tau \in [t- \Delta t;t+ \Delta t] \} \: ) \qquad i \in \{\text{dispo, meca, elec} \} $
+```math
+\text{Moy}_{s,t,i } = \text{Moyenne} ( \: \{x_{s,\tau,i} | \tau \in [t- \Delta t;t+ \Delta t] \} \: ) \qquad i \in \{\text{dispo, meca, elec} \}
+```
 
 <img src="illustrations/16maiMoyenneCharonne.png" width="400"> <img src="illustrations/16maiMoyenneVeloCharonne.png" width="400"> 
 
@@ -33,12 +35,16 @@ et ensuite je définis par analogie à l'article de recherches dans lequel ils u
 - $G$ un groupe de stations  
 - $S_G$ l'ensemble des stations de $G$  
 
-$$ \theta_{G,t,\text{i}} = \frac{ \sum_{s \in S_G} \text{MoyCib}_{s,t,\text{i} } }{ \sum_{s \in S_G} \text{Capacité de s} } \qquad i \in \{\text{dispo, meca, elec} \}$$
+```math
+\theta_{G,t,\text{i}} = \frac{ \sum_{s \in S_G} \text{MoyCib}_{s,t,\text{i} } }{ \sum_{s \in S_G} \text{Capacité de s} } \qquad i \in \{\text{dispo, meca, elec} \}
+```
 
 Autrement dit : je fais le rapport entre les places disponibles dans le groupe et le total des places du groupe.
 
 Et ainsi, pour obtenir la valeur prédite pour une station :  
-$$ Y_{s,t,\text{i}} = C_s \times \theta_{G_s,\text{i}} \qquad i \in \{\text{dispo, meca, elec} \}$$
+```math
+Y_{s,t,\text{i}} = C_s \times \theta_{G_s,\text{i}} \qquad i \in \{\text{dispo, meca, elec} \}
+```
 On obtient le résultat par proportionnalité.
 
 On répète ainsi l'opération pour chaque point $t$ voulu.
