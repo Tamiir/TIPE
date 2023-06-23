@@ -5,6 +5,8 @@
 Voici mon projet de TIPE pour mon parcourt en classe préparatoire aux grandes écoles.  
 Le thème de mon année est : **La ville**.
 
+J'ai choisi de m'intéresser aux algoritmes de prédiction et leurs applications dans le réseau Vélib'.
+
 ### But
 
 Afin d'éviter de se retrouver dans la cas d'une station vide ou parfaitement pleine, mon but est de prévoir l'occupation des stations du réseau Vélib'.
@@ -65,6 +67,8 @@ Les répertoires :
 
 Here is my TIPE project for my studies in preparing classes for high schools.
 My year theme was : **The city**
+
+I chose to focus on predictive algoritms and their applications in the Vélib' network.
 
 ### Goals
 
