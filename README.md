@@ -18,7 +18,7 @@ Chaque point représente une station et les couleurs illustrent les communes de 
 ### Exécution
 
 Je récupère les données historiques du réseau grâce à l'API du site <a href="https://opendata.paris.fr">opendata.paris.fr</a>
-et les données météo grâce au site <a href= "https://www.visualcrossing.com">visualcrossing.com </a>.
+et les données météo grâce au site <a href= "https://www.visualcrossing.com">visualcrossing.com</a>.
 J'ai fait tourner [GET_csv.py](GET_csv.py) sur 3 mois. Le fichier n'est pas sur le git (4,5Go), mais j'ai fourni [un jour de recupération](vélib_données.csv) pour comprendre le format.
 
 J'ai utilisé 3 modèles de prédiction différents :
@@ -42,7 +42,10 @@ Pour plus de détails sur les modèles, voir [ici](modeles.md).
 
 Les fichiers:
 
-- `Main.py` : Le fichier principal, il est décomposé en deux parties : I) La prédiction sur les places disponibles II) la prédiction sur les vélos disponibles. Chaque partie est décomposée en trois sous parties representant les trois modèles utilisés.
+- `Main.py` : Le fichier principal, il est décomposé en deux parties :  
+    - I) La prédiction sur les places disponibles  
+    - II) la prédiction sur les vélos disponibles.  
+    Chaque partie est décomposée en trois sous parties representant les trois modèles utilisés.  
 Il reste les fonctions d'affichage qui utilisent `matplotlib`.
 La manipulation des fichiers `csv` est faite avec le module `Pandas`.
 - `Aux_.py` : les fonctions auxiliaires, utiles pour `Main` mais qui ne sont pas propres au raisonnement des differents modèles.
