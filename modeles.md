@@ -12,7 +12,7 @@ En notant respectivement :
 et vélos éléctriques disponibles à la station $s$ à l'instant $\tau$ 
 
 ```math
-\text{Moy}_{s,t,i } = \frac{ \sum_{ \tau \in [t- \Delta t;t+ \Delta t]} x_{s,\tau,i} }{ \text{Card} \{d_{s,\tau} | \tau \in [t- \Delta t;t+ \Delta t] \} } \qquad i \in \{\text{dispo, meca, elec} \}
+\text{Moy}_{s,t,i } = \frac{ \sum_{ \tau \in [t- \Delta t;t+ \Delta t]} x_{s,\tau,i} }{ \text{Card} \{x_{s,\tau} | \tau \in [t- \Delta t;t+ \Delta t] \} } \qquad i \in \{\text{dispo, meca, elec} \}
 ```
 
 Autrement dit : 
