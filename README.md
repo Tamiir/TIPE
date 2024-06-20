@@ -30,7 +30,7 @@ J'ai utilisé 3 modèles de prédiction différents :
 Ces modèles sont inspirés de ceux utilisés dans differentes études, vous pouvez retrouver les références des articles dans mon [MCOT](MCOT_DOT/Mcot_40599.pdf)
 
 En raison de la longueur des calculs, les résultats ont été stockés dans des fichiers Numpy (`.npy`), ils sont retrouvables dans le répertoire [resultats](resultats).  
-De plus, pour réduire le temps de calcul, j'ai eu recours au  [_multiprocessing_](multiprocess.py). Les différents scripts qui ont servis aux differents calculs sont laissé en commentaires dans le fichier python.
+De plus, pour réduire le temps de calcul, j'ai eu recours au  [_multiprocessing_](multiprocess.py). Les différents scripts qui ont servis aux differents calculs sont laissés en commentaires dans le fichier python.
 
 <img src="illustrations/16maiRFcharonne.png" width="400">
 
@@ -49,8 +49,8 @@ Les fichiers:
 Il reste les fonctions d'affichage qui utilisent `matplotlib`.
 La manipulation des fichiers `csv` est faite avec le module `Pandas`.
 - `Aux_.py` : les fonctions auxiliaires, utiles pour `Main` mais qui ne sont pas propres au raisonnement des differents modèles.
-- `GET_csv.py` : le script permettant de récuperer les données de l'API Vélib` de <a href="https://opendata.paris.fr">opendata.paris.fr</a>
-- `traitement.py` : les differentes fonctions de traitement des données. Ce traitement est nécessaire pour préparer les données aux modèles de prédiction.
+- `GET_csv.py` : le script permettant de récuperer les données de l'API Vélib' de <a href="https://opendata.paris.fr">opendata.paris.fr</a>
+- `traitement.py` : les différentes fonctions de traitement des données. Ce traitement est nécessaire pour préparer les données aux modèles de prédiction.
 - `multiprocess.py` : les scripts de _multiprocessing_ qui ont permis de réduire les temps de calcul.
 - `vélib_données.csv` : un exemple de table de données utilisable dans les différents modèles.
 
